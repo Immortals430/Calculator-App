@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+
+  <body>
+    <div id="app"></div>
+
+    <h1>
+      Calculator
+    </h1>
+
+    <div id="gridcontainer">
+      <div class="item1">
+        <input type="text" id="input" name="input" value="" disabled />
+      </div>
+      <div class="item">
+        <input type="button" value="AC" onclick="allClearInput()" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="C" onclick="clearInput()" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="%" onclick="addToInput('/100*')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="-" onclick="addToInput('-')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="1" onclick="addToInput('1')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="2" onclick="addToInput('2')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="3" onclick="addToInput('3')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="*" onclick="addToInput('*')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="4" onclick="addToInput('4')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="5" onclick="addToInput('5')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="6" onclick="addToInput('6')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="/" onclick="addToInput('/')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="7" onclick="addToInput('7')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="8" onclick="addToInput('8')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="9" onclick="addToInput('9')" />
+      </div>
+
+      <div class="item item2">
+        <input type="button" value="+" onclick="addToInput('+')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="0" onclick="addToInput('0')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="." onclick="addToInput('.')" />
+      </div>
+
+      <div class="item">
+        <input type="button" value="=" onclick="calculate()" />
+      </div>
+    </div>
+
+  
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
