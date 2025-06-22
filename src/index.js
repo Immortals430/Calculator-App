@@ -1,24 +1,26 @@
-var input = document.getElementById('input')
+let input = document.querySelector(".result-display");
 
 // function will show value to input field
-function addToInput(val) {
-  input.value += val;
-}
+const btnArr = document.querySelectorAll(".num");
+btnArr.forEach((btn) => {
+  btn.addEventListener("click", addToInput);
+});
 
-// function will clear Input value
-function allClearInput() {
-  input.value = "";
+function addToInput(e) {
+  if(input.innerText.length >= 16) return alert("max 16 characters allowed")
+  input.innerText += e.target.innerText;
 }
 
 // function for slicing last string
-function clearInput() {
-  input.value = input.value.slice(0,-1);
-}
+document.querySelector(".btn-13").addEventListener("click", clearInput);
 
+function clearInput() {
+  input.innerText = input.innerText.slice(0, -1);
+}
 
 //function will calculate result using eval() function and display it in input field
+document.querySelector(".equals").addEventListener("click", calculate);
+
 function calculate() {
-  input.value = eval(input.value);
+  input.innerText = eval(input.innerText);
 }
-
-

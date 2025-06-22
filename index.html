@@ -1,101 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator Project</title>
-    <link rel="stylesheet" href="src/styles.css">
+    <link rel="stylesheet" href="src/styles.css" />
   </head>
 
   <body>
-    <div id="app"></div>
+    <h1>Calculator</h1>
 
-    <h1>
-      Calculator
-    </h1>
+    <div class="grid">
+      <div class="calc-head">
+        <div class="result-display"></div>
 
-    <div id="gridcontainer">
-      <div class="item1">
-        <input type="text" id="input" name="input" value="" disabled />
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+        <div class="dot3"></div>
       </div>
-      <div class="item">
-        <input type="button" value="AC" onclick="allClearInput()" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="C" onclick="clearInput()" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="%" onclick="addToInput('/100*')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="-" onclick="addToInput('-')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="1" onclick="addToInput('1')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="2" onclick="addToInput('2')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="3" onclick="addToInput('3')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="*" onclick="addToInput('*')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="4" onclick="addToInput('4')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="5" onclick="addToInput('5')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="6" onclick="addToInput('6')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="/" onclick="addToInput('/')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="7" onclick="addToInput('7')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="8" onclick="addToInput('8')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="9" onclick="addToInput('9')" />
-      </div>
-
-      <div class="item item2">
-        <input type="button" value="+" onclick="addToInput('+')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="0" onclick="addToInput('0')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="." onclick="addToInput('.')" />
-      </div>
-
-      <div class="item">
-        <input type="button" value="=" onclick="calculate()" />
-      </div>
+      <div class="btn-1 grey num">7</div>
+      <div class="btn-2 grey num">8</div>
+      <div class="btn-3 grey num">9</div>
+      <div class="btn-4 white num">/</div>
+      <div class="btn-5 grey num">4</div>
+      <div class="btn-6 grey num">5</div>
+      <div class="btn-7 grey num">6</div>
+      <div class="btn-8 white num">-</div>
+      <div class="btn-9 grey num">1</div>
+      <div class="btn-10 grey num">2</div>
+      <div class="btn-11 grey num">3</div>
+      <div class="btn-12 white num">+</div>
+      <div class="btn-13 grey">C</div>
+      <div class="btn-14 grey num">0</div>
+      <div class="btn-15 grey num">.</div>
+      <div class="btn-16 equals">=</div>
     </div>
-
-  
 
     <script src="src/index.js"></script>
   </body>
