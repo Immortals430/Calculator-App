@@ -9,7 +9,6 @@ Link to production site: [Calculator App](https://immortals430.github.io/Calcula
 ## Features
 
 - Calculator App for Productivity
-- Minimum js code is used
 - Responsive web page
 
 
