@@ -15,7 +15,7 @@ Link to production site: [Calculator App](https://immortals430.github.io/Calcula
 ## Screenshots
 
 <p align="center">
-<img src="https://github.com/Immortals430/Calculator-App/assets/124674815/5667f83b-398d-46ec-b26d-68ea41b81a8d" width="468" height="300" />
+<img src="https://github.com/user-attachments/assets/9d989a8a-f202-4bad-9e37-396a1793e86b" width="468" height="300" />
 </p>
 
 
